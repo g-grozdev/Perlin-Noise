@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Perlin Noise/Perlin Noise.vcxproj" />
+  <Project Path="Perlin Noise/Perlin Noise.vcxproj" Id="388d6aec-87dc-46d8-9641-a83f041e53ad" />
 </Solution>
