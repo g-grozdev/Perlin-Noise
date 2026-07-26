@@ -14,6 +14,13 @@ NVector::NVector(std::initializer_list<float> init) : size(init.size())
 	coords = std::vector<float>(init.begin(), init.end());
 }
 
+NVector::NVector(const std::vector<float>& vec) : size(vec.size())
+{
+	if (vec.size() == 0) throw std::invalid_argument("vector size cannot be less than 0");
+
+	coords = vec;
+}
+
 size_t NVector::get_size()
 {
 	return size;

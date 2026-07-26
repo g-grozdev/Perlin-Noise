@@ -139,10 +139,12 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Noise.cpp" />
     <ClCompile Include="NVector.cpp" />
     <ClCompile Include="Perlin Noise.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Noise.h" />
     <ClInclude Include="NVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
