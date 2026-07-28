@@ -11,7 +11,6 @@ class NVector
 	std::vector<float> coords;
 
 public:
-	NVector();
 	NVector(size_t _size);
 	NVector(std::initializer_list<float> init);
 	NVector(const std::vector<float>& init);

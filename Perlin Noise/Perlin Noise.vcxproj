@@ -142,10 +142,14 @@
     <ClCompile Include="Noise.cpp" />
     <ClCompile Include="NVector.cpp" />
     <ClCompile Include="Perlin Noise.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Noise.h" />
     <ClInclude Include="NVector.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="Vector3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

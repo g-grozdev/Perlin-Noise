@@ -39,13 +39,13 @@ float NVector::length()
 
 void NVector::normalize()
 {
-	float norm = length();
+	float len = length();
 
-	if (norm == 0.0) throw std::logic_error("cannot normalize null vector");
+	if (len == 0.0f) throw std::logic_error("cannot normalize null vector");
 
 	for (int i = 0; i < size; i++) 
 	{
-		coords[i] /= norm;
+		coords[i] /= len;
 	}
 }
 
@@ -128,9 +128,15 @@ float operator*(const NVector& vec_1, const NVector& vec_2)
 
 std::ostream& operator<<(std::ostream& os, const NVector& vec)
 {
+	os << "( ";
 	for (int i = 0; i < vec.size; i++) 
 	{
-		os << vec[i] << ' ';
+		os << vec[i];
+		if (i != vec.size - 1) 
+		{
+			os << "; ";
+		}
 	}
+	os << " )";
 	return os;
 }

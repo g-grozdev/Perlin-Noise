@@ -19,6 +19,7 @@ class Noise
 	bool check_cache(const std::vector<float>& coords);
 	void calculate_vectors();
 	void get_coordinates(int ind);
+	unsigned int hash(unsigned int x);
 
 	float smooth_step(float x);
 	float lerp(float a, float b, float x);
@@ -30,8 +31,6 @@ public:
 	Noise(size_t _size, int seed);
 
 	float get(const std::vector<float>& coords);
-	unsigned int hash(unsigned int x);
-
 	void set_seed(int _seed);
 };
 
