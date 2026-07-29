@@ -29,7 +29,7 @@ bool Noise::check_cache(const std::vector<float>& coords)
 		val = (int)std::floor(coords[i]);
 		if (bottom_corner[i] != val) res = false;
 		bottom_corner[i] = val;
-		top_corner[i] = (int)std::floor(coords[i] + 1.0f);
+		top_corner[i] = val + 1;
 	}
 	return res;
 }
@@ -74,7 +74,7 @@ unsigned int Noise::hash(unsigned int x)
 	x ^= (x >> 15);
 	x *= 0x846ca68b;
 	x ^= (x >> 13);
-	x ^= 0x92a6f462;
+	x ^= 0x92a6f463;
 	x ^= (x >> 17);
 	x *= 0xa87be915;
 	return x;
