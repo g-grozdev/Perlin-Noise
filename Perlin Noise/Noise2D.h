@@ -26,7 +26,7 @@ class Noise2D
 	float max(float a, float b);
 
 public:
-	Noise2D(int seed);
+	Noise2D(int _seed);
 
 	float get(float x, float y);
 	void set_seed(int _seed);

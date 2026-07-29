@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Noise.cpp" />
     <ClCompile Include="Noise2D.cpp" />
+    <ClCompile Include="Noise3D.cpp" />
     <ClCompile Include="NVector.cpp" />
     <ClCompile Include="Perlin Noise.cpp" />
     <ClCompile Include="Vector2D.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Noise.h" />
     <ClInclude Include="Noise2D.h" />
+    <ClInclude Include="Noise3D.h" />
     <ClInclude Include="NVector.h" />
     <ClInclude Include="Vector2D.h" />
     <ClInclude Include="Vector3D.h" />

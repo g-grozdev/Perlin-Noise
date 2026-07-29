@@ -82,7 +82,6 @@ void Noise2D::calculate_vectors()
 void Noise2D::get_coordinates(int ind)
 {
 	unsigned int val = seed;
-	int mask = 1;
 	if ((ind & 1) == 0) 
 	{
 		val ^= hash(bottom_corner[0]);

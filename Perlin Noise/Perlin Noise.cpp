@@ -3,6 +3,7 @@
 #include "Vector2D.h";
 #include "Vector3D.h";
 #include "Noise2D.h"
+#include "Noise3D.h"
 
 int main()
 {
