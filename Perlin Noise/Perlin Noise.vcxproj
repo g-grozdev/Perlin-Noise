@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FractalNoise.cpp" />
     <ClCompile Include="Noise.cpp" />
     <ClCompile Include="Noise2D.cpp" />
     <ClCompile Include="Noise3D.cpp" />
@@ -148,6 +149,7 @@
     <ClCompile Include="Vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FractalNoise.h" />
     <ClInclude Include="Noise.h" />
     <ClInclude Include="Noise2D.h" />
     <ClInclude Include="Noise3D.h" />
