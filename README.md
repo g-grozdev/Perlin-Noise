@@ -5,6 +5,7 @@ This is a repository implementing Perlin noise. It features n-dimensional Perlin
 Due to the necessity of vectors for the calculations of Perlin noise, this repository also implements its own vector classes, although they are not the main feature. All vectors are in an orthonormal space. They all support addition of two vectors, multiplication between a vector and a scalar, dot product multiplication between two vectors, finding its length, and normalizing itself.
 
 1. NVector class
+
    Implements a standard n-dimensional vector in an n-dimensional space.
 2. Vector2D class and Vector3D class
    Implements a standard 2-D vector in a 2-D space, and implements a standard 3-D vector in a 3-D space, respectively.
