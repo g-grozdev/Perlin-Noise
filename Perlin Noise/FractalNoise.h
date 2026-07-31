@@ -19,7 +19,7 @@ class FractalNoise
 
 public:
 	FractalNoise(size_t _size, int _seed);
-	FractalNoise(size_t _size, int _seed, int _octaves, float _freq, float _scale);
+	FractalNoise(size_t _size, int _seed, int _octaves, float _freq, float _amplitude);
 
 	float get(const std::vector<float>& coords);
 	void set_seed(int _seed);

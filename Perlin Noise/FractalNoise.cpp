@@ -24,26 +24,20 @@ float FractalNoise::pow(float base, int exp)
 
 float FractalNoise::normalizing_smooth_step(float x)
 {
-	return 2 * (6 * pow(0.5f * x + 0.5f, 5) - 15 * pow(0.5f * x + 0.5f, 4) + 10 * pow(0.5f * x + 0.5f, 3) - 0.5f);
+	return 2 * (3 * pow(0.5f * x + 0.5f, 2) - 2 * pow(0.5f * x + 0.5f, 3) - 0.5f);
 }
 
 FractalNoise::FractalNoise(size_t _size, int _seed) : seed(_seed), size(_size), octaves_count(3), frequency_factor(2.0f), amplitude_factor(0.5f),
-layers(std::vector<Noise>(3, Noise(_size, _seed))), frequencies({1.0f, 2.0f, 4.0f}), amplitudes({1.0f, 0.5f, 0.25f}), total_amplitude(1.0f) 
+layers(std::vector<Noise>(3, Noise(_size, _seed))), frequencies({1.0f, 2.0f, 4.0f}), amplitudes({1.0f, 0.5f, 0.25f}), total_amplitude(1.75f) 
 {
 	if (_size == 0) throw std::invalid_argument("cannot have size of 0");
 
 	int temp_seed = seed;
-	float curr_amplitude = 1.0f;
-	float composite_amplitude = 0.0f;
 	for (int i = 0; i < octaves_count; i++) 
 	{
 		layers[i].set_seed(temp_seed);
 		temp_seed = hash(temp_seed);
-
-		composite_amplitude += curr_amplitude;
-		curr_amplitude *= amplitude_factor;
 	}
-	total_amplitude = composite_amplitude;
 }
 
 FractalNoise::FractalNoise(size_t _size, int _seed, int _octaves, float _freq, float _amplitude) : seed(_seed), size(_size), octaves_count(_octaves), 
