@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="FractalNoise.cpp" />
     <ClCompile Include="FractalNoise2D.cpp" />
+    <ClCompile Include="FractalNoise3D.cpp" />
     <ClCompile Include="Noise.cpp" />
     <ClCompile Include="Noise2D.cpp" />
     <ClCompile Include="Noise3D.cpp" />
@@ -152,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="FractalNoise.h" />
     <ClInclude Include="FractalNoise2D.h" />
+    <ClInclude Include="FractalNoise3D.h" />
     <ClInclude Include="Noise.h" />
     <ClInclude Include="Noise2D.h" />
     <ClInclude Include="Noise3D.h" />

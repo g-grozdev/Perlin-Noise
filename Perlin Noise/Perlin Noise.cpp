@@ -6,6 +6,7 @@
 #include "Noise3D.h"
 #include "FractalNoise.h"
 #include "FractalNoise2D.h"
+#include "FractalNoise3D.h"
 
 int main()
 {
